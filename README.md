@@ -1,1 +1,1 @@
-# JAVA-GeneticGameOfLife
+# Genetic Game Of Life
