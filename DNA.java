@@ -16,7 +16,8 @@ public class DNA {
 	 * 10 old age (10 max)
 	 * 11 energy to breed (10 max)
 	 */
-	public static float[] dnaExample={5f,5f,10f,0f,1f,0f,0f,1f,0f,5f,5f,5f};
+	public static float[] dnaWalking={5f,5f,10f,0f,1f,0f,0f,1f,0f,5f,5f,5f};
+	public static float[] dnaSwimming={5f,5f,10f,1f,0f,0f,0f,0f,1f,5f,5f,5f};
 	
 	public DNA(float[] dna) {
 		this.dna = dna;
