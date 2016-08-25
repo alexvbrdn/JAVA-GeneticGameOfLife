@@ -12,7 +12,7 @@ public class Main {
 	public static void main(String[] args) {
         
         
-		World world = new World(loadMap("src/map/meadow"));
+		World world = new World(loadMap("map/meadow"));
 		new Creature(world,2,2,new DNA(DNA.dnaWalking));
 		
 		while(true){
