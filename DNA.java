@@ -5,7 +5,7 @@ public class DNA {
 	public float[] dna;
 	/* 0 vitality (20 max)
 	 * 1 energy (20 max)
-	 * 2 hunger (20 max)
+	 * 2 hunger (10 max)
 	 * 3 al water
 	 * 4 al grass
 	 * 5 al corpse
@@ -45,7 +45,7 @@ public class DNA {
 		return Math.abs((int) dna[1]) % 20;
 	}
 	public int getHunger(){
-		return Math.abs((int) dna[2]) % 20;
+		return Math.abs((int) dna[2]) % 15;
 	}
 	public boolean eatWater(){
 		return ((Math.abs((int) dna[3]) % 2)==1);

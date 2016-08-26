@@ -52,7 +52,20 @@ public class Panel extends JPanel {
 			for(int j=0;j<xN;j++){
 				if(world.entities[i][j]!=null){
 					if(world.entities[i][j].type==0){
-						g.setColor(Color.red);
+						Creature creature = ((Creature) world.entities[i][j]);
+						
+						if((creature.eatGrass || creature.eatWater) && (creature.eatCorpse || creature.eatCreature)){
+							g.setColor(Color.yellow);
+						}
+						else if(creature.eatGrass || creature.eatWater){
+							g.setColor(Color.magenta);
+						}
+						else if(creature.eatCorpse || creature.eatCreature){
+							g.setColor(Color.red);
+						}
+						else {
+							g.setColor(Color.white);
+						}
 					}
 					else if(world.entities[i][j].type==1){
 						g.setColor(Color.orange);

@@ -34,11 +34,11 @@ public class World {
 			System.out.println("Error  instances: "+instance);
 		}
 		day++;
-		for(int i=0;i<tiles.length;i++){
+		/*for(int i=0;i<tiles.length;i++){
 			for(int j=0;j<tiles[0].length;j++){
 				tiles[i][j].update();
 			}
-		}
+		}*/
 		
 		
 		
